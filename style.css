@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    display: flex;
+
+/* Info: if you choose a verticale view like flex-direction:column, justify-content zwitches to a vertical alignment and align-items to horizontally allignment!!! */
+
+
+/* OUTER CONTAINER PROPERTIES: */
+
+    /* FLEX-DIRECTION: */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* FLEX-WRAP: */
+    /* flex-wrap: nowrap; items stay on one line and dont recize. */
+    /* flex-wrap: wrap-reverse; */
+
+    /* FLEX-FLOW: */
+    /* flex-flow: row nowrap; flex-flow combines flex-direction and flex-wrap in one */
+
+    /* JUSTIFY-CONTENT: move the items on horizontally line*/
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    
+    /* ALIGN-ITEMS: it moves the items on the vertical line*/
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; if you apply this, all the children will stretched vertically to the height of the parent box. If you give a height to a inner box, it will have the given height and wont stretch*/
+    height: 350px;
+    width: 100%;
+    border: 3px solid red;
+}
+
+
+ /* ITEMS-PROPERTY:inside the parent container */
+.item {
+    margin: 10px;
+    padding: 10px;
+    /* width: 200px; */
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    flex: 1;
+}
+
+.one {
+    /* order: 1;  */
+    /* order property is default 0. When you give an item now as order the value 1 or 2, its higher than 0. It alligns behind the items with order 0 */
+
+    /* flex-grow: 8;  */
+    /* it gives a width in the viewport compared to the other items inside the parent container */
+
+    /* flex-shrink: 9;
+    the item shrinks compared to the other items. */
+
+    flex: 2;
+
+}
+
+.two {
+    /* order: 2; */
+    /* flex-grow: 2;  */
+
+}
+
+.three {
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+    flex: 3;
+}
+
+.tomato {
+    background: tomato;
+    
+}
+
+.green {
+    background: green;
+}
+
+.purple {
+    background: purple;
+}
